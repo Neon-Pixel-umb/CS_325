@@ -16,29 +16,30 @@ Clone this GitHub repository to your local machine using the following command:
 
 ```bash
 git clone <https://github.com/Neon-Pixel-umb/Project-1.git>
+```
 
-
-Step 2: Set Up the Environment
+###Step 2: Set Up the Environment
 The required dependencies are listed in the environment.yml file. You can create a virtual environment using Conda and install the dependencies as follows:
 
 conda env create -f environment.yml
 
 This will create a Conda environment with all necessary dependencies installed.
 
-Step 3: Activate the Environment
+###Step 3: Activate the Environment
 Once the environment is created, activate it:
 
-
+```
 conda activate <your-environment-name>
+```
 
-
-Step 4: Run the Script
+### Step 4: Run the Script
 Make sure to provide a prompts.txt file containing the prompts you'd like to generate responses for, with each prompt on a new line. Then, run the script:
 
+```
 python main.py
-
+```
 
 The generated responses will be saved to responses.txt.
 
-Warning:
+## Warning:
 This model was designed to mimic human speech, so offensive or inappropriate responses may occur. Use it with caution.
