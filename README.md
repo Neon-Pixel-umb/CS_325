@@ -21,8 +21,9 @@ git clone <https://github.com/Neon-Pixel-umb/Project-1.git>
 ### Step 2: Set Up the Environment
 The required dependencies are listed in the environment.yml file. You can create a virtual environment using Conda and install the dependencies as follows:
 
+```
 conda env create -f environment.yml
-
+```
 This will create a Conda environment with all necessary dependencies installed.
 
 ### Step 3: Activate the Environment
