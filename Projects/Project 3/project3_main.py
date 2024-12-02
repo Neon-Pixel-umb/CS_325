@@ -80,29 +80,31 @@ class SentimentPipeline:
             print("No sentiment files found in the output folder.")
             return
 
-        sentiment_counts = {}
-
         for file in files:
             filepath = os.path.join(self.output_folder, file)
             try:
+                # Read sentiment results from the file
                 with open(filepath, "r", encoding="utf-8") as infile:
                     sentiments = [line.strip() for line in infile if line.strip()]
                     positive = sentiments.count("positive")
                     negative = sentiments.count("negative")
                     neutral = sentiments.count("neutral")
-                    sentiment_counts[file] = [positive, negative, neutral]
+
+                # Plotting the bar chart
+                labels = ["Positive", "Negative", "Neutral"]
+                counts = [positive, negative, neutral]
+                
+                plt.bar(labels, counts, color=["green", "red", "gray"])
+                plt.title(f"Sentiment Distribution for {file}")
+                plt.xlabel("Sentiment")
+                plt.ylabel("Count")
+                plt.tight_layout()
+                plt.show()
+
             except FileNotFoundError:
                 print(f"Sentiment file {file} not found.")
             except Exception as e:
                 print(f"Error reading sentiment file {file}: {e}")
-
-        # Plot bar chart for each product
-        for product, counts in sentiment_counts.items():
-            labels = ["Positive", "Negative", "Neutral"]
-            plt.bar(labels, counts)
-            plt.title(f"Sentiments for {product}")
-            plt.ylabel("Count")
-            plt.show()
 
 
 if __name__ == "__main__":

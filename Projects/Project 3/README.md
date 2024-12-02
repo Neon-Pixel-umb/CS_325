@@ -28,6 +28,8 @@ Project3/
 ├── output/                  # Directory for output sentiment files
 └── README.md                # Detailed project documentation
 
+```
+
 ## **Requirements**
 
 This project uses Python and the Conda package manager. The dependencies are specified in the `requirements.yml` file.
@@ -82,7 +84,7 @@ positive
 ```
 
 ### **2. Bar Chart**
-![Sample Chart](https://via.placeholder.com/600x400?text=Sample+Bar+Chart)
+![Sample Chart](Figure_1.png)
 
 ---
 
