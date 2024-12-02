@@ -1,0 +1,10 @@
+name: webscraping_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - requests
+  - beautifulsoup4
+  - lxml
+  - time
