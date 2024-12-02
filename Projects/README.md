@@ -29,6 +29,8 @@ Project3/
 └── README.md                # Detailed project documentation
 ```
 
+---
+
 ## **Requirements**
 
 This project uses Python and the Conda package manager. The dependencies are specified in the `requirements.yml` file.
