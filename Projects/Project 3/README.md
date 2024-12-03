@@ -117,7 +117,7 @@ Test cases are included to validate the functionality of individual components u
 ### **Running Tests**
 Run the test suite:
 ```bash
-pytest test_pipeline.py
+pytest test_sentiment_analysis.py
 ```
 
 ### **Sample Test Cases**
